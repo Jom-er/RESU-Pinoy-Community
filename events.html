@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESU - Events</title>
     <style>
-        /* same styles as index (keep consistent) */
         html {
             scroll-behavior: smooth;
         }
@@ -37,13 +36,13 @@
 
         header h1 {
             margin: 0;
-            font-size: 26px;
-            letter-spacing: 1px;
         }
 
         header h1 a {
             color: #e60000;
             text-decoration: none;
+            font-size: 26px;
+            letter-spacing: 1px;
         }
 
         .menu-toggle {
@@ -102,7 +101,8 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://wallpaperaccess.com/full/2381647.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://wallpaperaccess.com/full/2381647.jpg') center/cover no-repeat;
             text-align: center;
             padding: 100px 20px;
         }
@@ -140,10 +140,6 @@
         section ul {
             font-size: 16px;
             color: #ccc;
-        }
-
-        section ul li {
-            margin-bottom: 10px;
         }
 
         .card {
@@ -224,29 +220,31 @@
     </header>
 
     <div class="hero">
-        <h2>Resident Evil Survival Unit: Alligator Event</h2>
-        <p>Join the ultimate survival challenge — only the brave will endure.</p>
+        <h2>Upcoming Events</h2>
+        <p>Discover thrilling survival challenges and community activities.</p>
     </div>
 
     <main>
-        <section id="about-event">
-            <h3>About the Event</h3>
+        <section id="main-event">
+            <h3>Featured Event</h3>
             <div class="card">
-                <p>The <strong>Alligator Survival Event</strong> is a thrilling test of strategy, teamwork, and
-                    endurance. Players will
-                    face dangerous scenarios inspired by Resident Evil — are you ready to survive?</p>
+                <h4>Resident Evil Survival Unit: Alligator Event</h4>
+                <p>A thrilling test of teamwork, strategy, and survival. Will you endure the nightmare?</p>
+                <p><strong>Date:</strong> October 25, 2025</p>
+                <p><strong>Time:</strong> 6:00 PM - 10:00 PM (PHT)</p>
             </div>
         </section>
 
-        <section id="rules">
-            <h3>Rules & Guidelines</h3>
+        <section id="more-events">
+            <h3>More Events</h3>
             <div class="card">
-                <ul>
-                    <li>All participants must play fair — no cheats or exploits.</li>
-                    <li>Respect teammates, opponents, and event staff.</li>
-                    <li>Harassment or offensive behavior will result in disqualification.</li>
-                    <li>Follow all instructions provided during the event briefing.</li>
-                </ul>
+                <h4>Resident Evil Survival Unit: Alligator Event</h4>
+                <p>A thrilling test of teamwork, strategy, and survival. Will you endure the nightmare?</p>
+                <p><strong>Date:</strong> October 25, 2025</p>
+                <p><strong>Time:</strong> 8:30 PM - 10:00 PM (PHT)</p>
+                <p><strong>Registration Time:</strong> 8:30 AM - 2:00 PM (PHT)</p>
+                <p><a href="https://forms.gle/ZuCCkdzDJSra5PHR8" target="_blank"
+                        style="color:#e60000; text-decoration:underline;">Register Now</a></p>
             </div>
         </section>
     </main>
@@ -260,6 +258,7 @@
     <script>
         const backToTopBtn = document.getElementById("backToTopBtn");
         window.onscroll = function () { scrollFunction() };
+
         function scrollFunction() {
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 backToTopBtn.classList.add("show");
@@ -269,6 +268,7 @@
                 setTimeout(() => { backToTopBtn.style.display = "none"; }, 400);
             }
         }
+
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
